@@ -2,7 +2,7 @@
 /**
  * 构建后处理脚本：为可执行文件添加 shebang
  */
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, chmodSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -21,6 +21,10 @@ try {
   } else {
     console.log('✓ dist/index.js already has shebang');
   }
+  
+  // 设置执行权限
+  chmodSync(indexPath, '755');
+  console.log('✓ Set executable permission on dist/index.js');
 } catch (error) {
   console.error('Error processing index.js:', error);
   process.exit(1);

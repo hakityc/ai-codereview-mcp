@@ -8,10 +8,11 @@
     "ai-codereview-mcp": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node scripts/post-build.js",
     "watch": "tsc --watch",
     "dev": "tsc && node dist/dev-server.js",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "mcp",
@@ -24,7 +25,8 @@
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^22.10.5",

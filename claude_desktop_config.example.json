@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ai-codereview": {
+      "command": "npx",
+      "args": ["-y", "ai-codereview-mcp"],
+      "env": {}
+    }
+  }
+}
