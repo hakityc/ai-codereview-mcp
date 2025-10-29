@@ -2,7 +2,7 @@
   "mcpServers": {
     "ai-codereview": {
       "command": "npx",
-      "args": ["-y", "ai-codereview-mcp"],
+      "args": ["-y", "lebo-ai-codereview-mcp"],
       "env": {}
     }
   }

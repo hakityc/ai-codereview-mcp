@@ -1,11 +1,11 @@
 {
-  "name": "ai-codereview-mcp",
+  "name": "lebo-ai-codereview-mcp",
   "version": "0.1.0",
   "description": "MCP server for AI-powered code review with multi-dimensional scoring",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "ai-codereview-mcp": "dist/index.js"
+    "lebo-ai-codereview-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc && node scripts/post-build.js",

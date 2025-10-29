@@ -48,13 +48,13 @@
 ### 方式一：全局安装
 
 ```bash
-npm install -g ai-codereview-mcp
+npm install -g lebo-ai-codereview-mcp
 ```
 
 ### 方式二：本地安装
 
 ```bash
-npm install ai-codereview-mcp
+npm install lebo-ai-codereview-mcp
 ```
 
 ### 方式三：从源码安装
@@ -84,7 +84,7 @@ npm run build
       "command": "npx",
       "args": [
         "-y",
-        "ai-codereview-mcp"
+        "lebo-ai-codereview-mcp"
       ]
     }
   }
@@ -97,7 +97,7 @@ npm run build
 {
   "mcpServers": {
     "ai-codereview": {
-      "command": "ai-codereview-mcp"
+      "command": "lebo-ai-codereview-mcp"
     }
   }
 }
