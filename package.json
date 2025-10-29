@@ -1,0 +1,33 @@
+{
+  "name": "ai-codereview-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for AI-powered code review with multi-dimensional scoring",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ai-codereview-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "tsc && node dist/dev-server.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "code-review",
+    "ai",
+    "llm",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  }
+}
